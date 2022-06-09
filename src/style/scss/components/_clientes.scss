@@ -1,0 +1,190 @@
+@import '../base/variables';
+
+main.main-clientes {
+
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    >div:not(:last-child) {
+
+        margin-bottom: 10px;
+
+    }
+
+    div.search-panel {
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        input {
+
+            width: 100%;
+            max-width: 400px;
+            padding: 5px 8px;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 5px;
+
+        }
+
+        h6 {
+
+            font-size: 1.3rem;
+            font-weight: normal;
+
+        }
+
+    }
+
+    div.goals-panel {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: column;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+        >div {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: $white;
+            gap: 15px;
+
+            >div {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: column;
+                gap: 15px;
+
+                h4 {
+                    font-size: 2.5rem;
+                }
+
+            }
+
+        }
+
+    }
+
+    div.agenda-panel {
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+
+        div.agenda-table {
+
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 8px 5px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            >div {
+
+                width: 100%;
+                padding: 8px 5px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                &:nth-child(2n) {
+                    background-color: $white;
+                }
+
+                button {
+
+                    background: none;
+                    border: solid 1px $main-orange;
+                    border-radius: 5px;
+                    padding: 5px;
+                    color: $main-orange;
+                    transition: $general-transition;
+
+                    &:hover {
+                        background-color: $main-orange;
+                        color: $white;
+                    }
+
+                }
+
+            }
+
+        }
+
+        div.plan-panel {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: column;
+
+            h4 {
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+
+            >div {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: column;
+                margin: 15px 0;
+                padding: 15px;
+                gap: 15px;
+
+                >div {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    border-radius: 15px;
+                    padding: 15px;
+                    background-color: $white;
+
+                    h5 {
+                        font-size: 1rem;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

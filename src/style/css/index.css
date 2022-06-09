@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   color: #292929;
+  background-color: #292929;
 }
 
 div#root {
@@ -22,12 +24,12 @@ div#root {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  background-color: #292929;
   transition: all 0.3s ease-in-out;
 }
 div#root main {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: scroll;
   flex-grow: 1;
   margin-left: 20px;
   border-radius: 25px 0 0 25px;
@@ -164,10 +166,150 @@ main.main-welcome a {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
+  transition: all 0.3s ease-in-out;
 }
 main.main-welcome a:hover {
   background-color: #FD531E;
   color: white;
+}
+
+main.main-clientes {
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+main.main-clientes > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+main.main-clientes div.search-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+main.main-clientes div.search-panel input {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+main.main-clientes div.search-panel h6 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+main.main-clientes div.goals-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: column;
+}
+main.main-clientes div.goals-panel h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+main.main-clientes div.goals-panel > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  gap: 15px;
+}
+main.main-clientes div.goals-panel > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: column;
+  gap: 15px;
+}
+main.main-clientes div.goals-panel > div > div h4 {
+  font-size: 2.5rem;
+}
+main.main-clientes div.agenda-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+main.main-clientes div.agenda-panel div.agenda-table {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main.main-clientes div.agenda-panel div.agenda-table > div {
+  width: 100%;
+  padding: 8px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main.main-clientes div.agenda-panel div.agenda-table > div:nth-child(2n) {
+  background-color: white;
+}
+main.main-clientes div.agenda-panel div.agenda-table > div button {
+  background: none;
+  border: solid 1px #FD531E;
+  border-radius: 5px;
+  padding: 5px;
+  color: #FD531E;
+  transition: all 0.3s ease-in-out;
+}
+main.main-clientes div.agenda-panel div.agenda-table > div button:hover {
+  background-color: #FD531E;
+  color: white;
+}
+main.main-clientes div.agenda-panel div.plan-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: column;
+}
+main.main-clientes div.agenda-panel div.plan-panel h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+main.main-clientes div.agenda-panel div.plan-panel > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: column;
+  margin: 15px 0;
+  padding: 15px;
+  gap: 15px;
+}
+main.main-clientes div.agenda-panel div.plan-panel > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: white;
+}
+main.main-clientes div.agenda-panel div.plan-panel > div > div h5 {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
