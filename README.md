@@ -6,6 +6,8 @@ Pantalla home CMR desarrollada en React JS.
 
 ### Link de despliegue
 
+https://cristiancsandoval.github.io/CRM/
+
 ## Inicialización del proyecto
 
  1. npm install
