@@ -10,6 +10,7 @@ body{
 
     font-family: $nunito;
     font-size: 18px;
+    color: $black;
 
 }
 
@@ -20,7 +21,7 @@ div#root{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-color: $black;
 

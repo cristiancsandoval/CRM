@@ -18,7 +18,7 @@ const AppRouter = () => {
         getUser(userId)
             .then(response => {
                 setUser(response.data.profile);
-                setLoading(true);
+                setLoading(false);
             })
             .catch(e => console.log(e))
 
