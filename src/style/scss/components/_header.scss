@@ -8,6 +8,8 @@ header.navbar{
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
+    position: sticky;
+    top: 0;
 
     div.logo{
 
@@ -40,7 +42,7 @@ header.navbar{
             text-decoration: none;
             color: $white;
             font-weight: 600;
-            transition: all 0.3s ease-in-out;
+            transition: $general-transition;
 
             &.active{
 

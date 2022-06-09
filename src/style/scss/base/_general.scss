@@ -20,9 +20,21 @@ div#root{
     height: 100%;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     background-color: $black;
+    transition: $general-transition;
+
+    main{
+
+        width: 100%;
+        min-height: 100vh;
+        flex-grow: 1;
+        margin-left: 20px;
+        border-radius: 25px 0 0 25px;
+        background-color: $white-bg;
+
+    }
 
 }

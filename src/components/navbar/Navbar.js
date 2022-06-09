@@ -16,7 +16,7 @@ const Navbar = () => {
           Home
         </NavLink>
         <NavLink
-          to='/dashboard'
+          to='/clientes'
           activeclassname='active'
         >
           Clientes

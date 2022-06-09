@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Nunito+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +19,19 @@ div#root {
   height: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #292929;
+  transition: all 0.3s ease-in-out;
+}
+div#root main {
+  width: 100%;
+  min-height: 100vh;
+  flex-grow: 1;
+  margin-left: 20px;
+  border-radius: 25px 0 0 25px;
+  background-color: #f6f7f9;
 }
 
 div.loader {
@@ -64,6 +74,8 @@ header.navbar {
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
+  position: sticky;
+  top: 0;
 }
 header.navbar div.logo {
   width: 100%;
@@ -119,6 +131,40 @@ header.navbar div.user-info div.cntr-photo img {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+main.main-welcome {
+  width: 100%;
+  height: 100%;
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Barlow", sans-serif;
+}
+main.main-welcome h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+main.main-welcome h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main.main-welcome a {
+  padding: 8px 10px;
+  border: solid 2px #FD531E;
+  border-radius: 5px;
+  color: #FD531E;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+main.main-welcome a:hover {
+  background-color: #FD531E;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

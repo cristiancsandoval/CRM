@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Dashboard from '../components/dashboard/Dashboard';
+import Clientes from '../components/clientes/Clientes';
 import Navbar from '../components/navbar/Navbar';
 import Welcome from '../components/welcome/Welcome';
 import { UserContext } from '../context/UserContext';
@@ -24,8 +24,8 @@ const AppRouter = () => {
 
     }, []);
 
-    if(loading){
-        return <Loader/>
+    if (loading) {
+        return <Loader />
     }
 
     return (
@@ -34,7 +34,7 @@ const AppRouter = () => {
                 <Navbar />
                 <Routes>
                     <Route path='*' element={<Welcome />} />
-                    <Route path='/dashboard' element={<Dashboard />} />
+                    <Route path='/clientes' element={<Clientes />} />
                 </Routes>
             </BrowserRouter>
         </UserContext.Provider>
