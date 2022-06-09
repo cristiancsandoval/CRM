@@ -87,6 +87,7 @@ header.navbar div.logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 header.navbar nav.nav-links {
   width: 100%;
@@ -143,13 +144,15 @@ main.main-welcome {
   justify-content: flex-start;
   font-family: "Barlow", sans-serif;
 }
+main.main-welcome h2, main.main-welcome h3 {
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+}
 main.main-welcome h2 {
   font-size: 4rem;
-  font-weight: 700;
 }
 main.main-welcome h3 {
   font-size: 3rem;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 main.main-welcome a {

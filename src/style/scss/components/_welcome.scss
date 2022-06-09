@@ -11,14 +11,17 @@ main.main-welcome{
     justify-content: flex-start;
     font-family: $barlow;
 
+    h2, h3{
+        transition: $general-transition;
+        font-weight: 700;
+    }
+
     h2{
         font-size: 4rem;
-        font-weight: 700;
     }
 
     h3{
         font-size: 3rem;
-        font-weight: 700;
         margin-bottom: 20px;
     }
 
