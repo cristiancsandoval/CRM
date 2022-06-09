@@ -1,0 +1,44 @@
+@import '../base/variables';
+
+div.loader{
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &::before{
+
+        content: 'K';
+        font-size: 3rem;
+        font-family: $barlow;
+        font-weight: 700;
+        color: $main-orange;
+
+    }
+
+    &::after{
+
+        content: '';
+        width: 100px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: $main-orange;
+        animation: loader-animation 0.5s linear infinite alternate;
+
+    }
+
+}
+
+@keyframes loader-animation {
+
+    from{
+        width: 10px;
+    }
+    
+}
